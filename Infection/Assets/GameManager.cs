@@ -41,7 +41,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (doctor.PlayerDead == true)
+        {
             SceneManager.LoadScene(endScene);
+            doctor.PlayerDead = false;
+        }
+            
 
     }
 }
